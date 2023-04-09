@@ -11,11 +11,12 @@ body{
     width: 200px;
     background-color: #EEE;
     padding: 10px;
+    z-index: 1;
 }
 
 #menu ul {
     list-style: none;
-    margin: 0;
+    margin-top:20px;
     padding: 0;
 }
 
@@ -24,7 +25,8 @@ body{
 }
 
 
-#menu a {
+
+.table-link{
     display: block;
     padding: 5px;
     background-color: #DDD;
@@ -32,7 +34,7 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
-#menu a:hover{
+.table-link:hover{
     color:rgb(255, 6, 6);
 }
 
