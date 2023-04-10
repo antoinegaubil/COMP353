@@ -13,11 +13,11 @@ $columns = $statement->fetchAll(PDO::FETCH_COLUMN);
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $table; ?></title>
+	<title><?php echo $table; ?> Table</title>
     <link rel="stylesheet" href="css/showTable.css">
 </head>
 <body>
-  <h1><?php echo $table; ?></h1>
+  <h1><?php echo $table; ?> Table</h1>
   <button id="add-row-btn" onclick="location.href='create.php?table=<?php echo $table; ?>'">Create new entry</button>
   <button id="home" onclick="location.href='index.php?'">
   <span>Back to Menu</span>
@@ -44,13 +44,13 @@ $columns = $statement->fetchAll(PDO::FETCH_COLUMN);
               <?php foreach ($row as $key => $value): ?>
                 <input type="hidden" name="<?php echo $key; ?>" value="<?php echo $value; ?>">
               <?php endforeach; ?>
-              <button type="submit">Edit</button>
+              <button class="edit-btn" type="submit">Edit</button>
             </form>
             <form method="post" action="delete.php?table=<?php echo $table;?>">
               <?php foreach ($row as $key => $value): ?>
                 <input type="hidden" name="<?php echo $key; ?>" value="<?php echo $value; ?>">
               <?php endforeach; ?>
-              <button type="submit">Remove</button>
+              <button class="delete-btn" type="submit">Delete</button>
             </form>
           </td>
         </tr>
