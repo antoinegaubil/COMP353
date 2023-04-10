@@ -11,6 +11,7 @@ body{
     width: 200px;
     background-color: #EEE;
     padding: 10px;
+    z-index: 1;
 }
 
 #menu ul {
@@ -47,6 +48,13 @@ body{
     margin-left:2%;
     height: 40%;
     object-fit: contain;
+}
+
+#search {
+
+    position: relative;
+    height: 100px; /* set the height to match the header height */
+    padding-left: 250px;
 }
 
 

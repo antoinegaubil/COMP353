@@ -15,15 +15,15 @@
             <li><a href="showTable.php?table=Employees">Employees</a></li>
             <li><a href="showTable.php?table=Facilities">Facilities</a></li>
             <li><a href="showTable.php?table=Infections">Infections</a></li>
-            <li><a href="showTable.php?table=IsInfected">isInfected</a></li>
             <li><a href="showTable.php?table=TookVaccines">TookVaccines</a></li>
             <li><a href="showTable.php?table=Vaccines">Vaccines</a></li>
-            <li><a href="showTable.php?table=WorksAt">WorksAt</a></li>
         </ul>
     </div>
     <div id="content">
         <h1>DB353 - Database UI <img id="bg-img" src="assets/bg.png"></h1>
-        
+    </div>
+    <div id = "search">
+        <a href="search.php">Go to search page</a>
     </div>
 </body>
 </html>
