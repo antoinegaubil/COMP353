@@ -11,7 +11,7 @@ table {
   th, td {
     border: 1px solid black;
     padding: 8px;
-    text-align: left;
+    text-align: center;
   }
   
   th {
@@ -48,6 +48,10 @@ table {
     font-weight: bold;
     cursor: pointer;
     float:right;
+    transition: transform 0.3s ease;
+  }
+  #home:hover{
+    transform: translateX(10px);
   }
   
   #home span {
@@ -89,4 +93,37 @@ table {
 
 .button:hover {
   background-color: #ddd;
+}
+
+.delete-btn,
+.edit-btn {
+color: white;
+border: none;
+padding: 6px 12px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+margin: 4px 2px;
+cursor: pointer;
+border-radius: 3px;
+width:100%;
+max-width: 20em;
+}
+
+
+.edit-btn:hover {
+  background-color: rgb(110, 132, 220);
+}
+.delete-btn:hover{
+  background-color: #f2695f;
+}
+
+.delete-btn {
+
+background-color: #f44336;
+}
+
+.edit-btn {
+background-color: #243163;
 }

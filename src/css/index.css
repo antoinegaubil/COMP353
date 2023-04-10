@@ -1,5 +1,6 @@
 body{
     font-family: Helvetica;
+    background-color: #EEE;
 }
 
 
@@ -9,7 +10,7 @@ body{
     left: 0;
     bottom: 0;
     width: 200px;
-    background-color: #EEE;
+    background-color: #868585;
     padding: 10px;
     z-index: 1;
 }
@@ -22,6 +23,7 @@ body{
 
 #menu li {
     margin: 5px 0;
+   
 }
 
 
@@ -29,13 +31,16 @@ body{
 .table-link{
     display: block;
     padding: 5px;
+    border:1px solid grey;
     background-color: #DDD;
     color: #000000;
     text-decoration: none;
     font-size: 18px;
+    transition: 0.3s ease;
 }
 .table-link:hover{
     color:rgb(255, 6, 6);
+    transform :translateX(20px)
 }
 
 #content h1 {
@@ -50,6 +55,27 @@ body{
     height: 40%;
     object-fit: contain;
 }
+
+#search{
+    background-color: #2b91ff;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 8em;
+}
+#search-img{
+    margin-left:10px;
+    max-height: 30px;
+}
+#search:hover{
+    background-color: #61a9f7;
+}
+
+
 
 
 #bg-img {

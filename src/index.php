@@ -15,11 +15,19 @@
             <li><a class="table-link" href="showTable.php?table=Employees">Employees</a></li>
             <li><a class="table-link" href="showTable.php?table=Vaccines">Vaccines</a></li>
             <li><a class="table-link" href="showTable.php?table=Infections">Infections</a></li>
+            <li>    <button id="search" onclick="location.href='search.php?'"> 
+           
+           Search
+           <img id="search-img" src="assets/search-outline.svg">
+           </button>
+            </li>
         </ul>
     </div>
     <div id="content">
-        <h1>DB353 - Database UI <img id="bg-img" src="assets/bg.png"></h1>
+        <h1>DB353 - Database UI <img id="bg-img" src="assets/bg.png"></h1>       
+  
         
     </div>
+ 
 </body>
 </html>
