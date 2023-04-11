@@ -15,6 +15,8 @@
             <li><a class="table-link" href="showTable.php?table=Employees">Employees</a></li>
             <li><a class="table-link" href="showTable.php?table=Vaccines">Vaccines</a></li>
             <li><a class="table-link" href="showTable.php?table=Infections">Infections</a></li>
+            <li><a class="table-link" href="showTable.php?table=TookVaccines">Took Vaccines</a></li>
+            <li><a class="table-link" href="showTable.php?table=IsInfected">isInfected</a></li>
             <li>    <button id="search" onclick="location.href='search.php?'"> 
            
            Search
