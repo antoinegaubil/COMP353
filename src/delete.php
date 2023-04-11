@@ -1,5 +1,6 @@
 <?php
 require_once 'database.php';
+
 $table = $_GET['table'];
 // Get the primary key value from the $_POST array
 $primary_key_name = array_key_first($_POST);
@@ -18,5 +19,12 @@ if ($stmt->execute()) {
 } else {
     echo "Error deleting row";
 }
-header("Location: showTable.php?table=$table");
+if (strpos($_SERVER['HTTP_REFERER'], 'schedule.php') == true) {
+  
+    header("Location: schedule.php");
+    exit; 
+} else {
+    header("Location: showTable.php?table=$table");
+    exit; 
+}
 ?>

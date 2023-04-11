@@ -1,0 +1,63 @@
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    width: 6%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left:10px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #employee-info-container {
+    margin-top: 20px;
+  }
+  
+  #worksAt-container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  ul{
+    list-style: none;
+  }
+
+  input{
+    width: 10em;
+    padding-left: 10px;
+  }

@@ -1,5 +1,7 @@
 <?php
 require_once 'database.php';
+
+
 $isPrimaryKey_input = true;
 // get the table name from the URL parameter
 $table = $_GET['table'];
@@ -20,6 +22,12 @@ foreach ($_POST as $key => $value) {
         // excluding the post value from button
         continue;
     }
+    //excluding empty strings
+    if($value == ''){
+        continue;
+    }
+   
+    //error with empty string so we need to convert to null
     $update_query .= "$key = '$value', ";
 }
 // remove the last comma and space from the query
@@ -30,12 +38,21 @@ $update_query .= " WHERE $pkey = '$pval'";
 
 try {
     $conn->query($update_query);
-    header("Location: showTable.php?table=$table");
     echo "Record updated successfully";
 } catch (PDOException $e) {
     echo "Error updating record: " . $e->getMessage();
 }
+
+if ($table  == 'WorksAt') {
+    header("Location: schedule.php");
+    exit; 
+} else {
+    header("Location: showTable.php?table=$table");
+    exit; 
 }
+
+}
+
 ?>
 
 
