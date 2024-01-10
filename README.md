@@ -5,6 +5,7 @@
 This project involves the development of a comprehensive database management web application. The application allows users to interact with a MySQL database using PHP-based web pages.
 
 **Overview of The Database**
+
 The database consists of tables representing various aspects of the system using mySQL. 
 "Facilities" holds information about different locations, "Employees" stores personnel details, and "WorksAt" establishes employee-facility relationships. 
 "Vaccines" and "Infections" track health-related data. "TookVaccines" and "IsInfected" link employees to vaccinations and infections. 
@@ -20,15 +21,9 @@ The relationships between entities are subject to constraints. Here are a few of
 - Employees can have multiple vaccinations and infections.
 - Employees can work at multiple facilities, provided there are no time conflicts.
 
-## Implementation Code
+## Implementation
 
-The PHP code exemplifies the implementation of displaying a table. It dynamically fetches and shows the data, enabling users to create, edit, or delete entries.
+The PHP code exemplifies the implementation of displaying a table. It dynamically fetches and shows the data, enabling users to create, edit, or delete entries. 
+The user has access to a flexible search engine that enables specific value searches within individual tables and allows cross-table searches.
 
-## Queries
-
-The project includes essential SQL queries for creating and managing tables, such as Facilities, Employees, WorksAt, Vaccines, TookVaccines, Infections, and IsInfected.
-
-## User Interface Snapshots & Triggers
-
-The user interface includes PHP-based pages for managing facilities, employees, vaccinations, infections, and schedules. Additionally, triggers, such as checking for schedule conflicts before insertion, enhance data integrity.
 
