@@ -3,6 +3,7 @@
 ## Project Overview
 
 This project involves the development of a comprehensive database management web application. The application allows users to interact with a MySQL database using PHP-based web pages.
+This PHP code connects to a MySQL database using PDO, retrieves all rows and column names for a specified table, enabling dynamic data display and manipulation in a PHP web app.
 
 **Overview of The Database**
 
